@@ -33,14 +33,13 @@ const Contact = () => {
         "service_kbfoh8k",
         "template_2h0x6jq",
         {
-          from_name: formData.name,
-          to_name: "Ali",
-          from_email: formData.email,
-          to_email: "AliSanatiDev@gmail.com",
+          name: formData.name,
+          email: formData.email,
           message: formData.message,
         },
         "pn-Bw_mS1_QQdofuV"
       );
+
       setIsLoading(false);
       setFormData({ name: "", email: "", message: "" });
       showAlertMessage("success", "You message has been sent!");
